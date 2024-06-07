@@ -1,2 +1,2 @@
 # GETDO
-a simple task manager made
+a simple task manager made with Vue3
