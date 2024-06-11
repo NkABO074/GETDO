@@ -1,11 +1,99 @@
 <script setup>
-import LandingVue from './views/LandingVue.vue';
+import { RouterView ,useRoute} from "vue-router"
+
+const route = useRoute();
+
 </script>
 
 <template>
-  <LandingVue />
+
+  <header class="container" v-if="!(route.path === '/' || route.path === '/connection' || route.path === '/inscription')">
+    <div class="container">
+      <h1 href="/home" class="logo">
+        GETDO
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="/home" class="menu-button">Tâches</a></li>
+          <li><a href="/visionbord" class="menu-button">Vision Board</a></li>
+          <li><a href="/calendar" class="menu-button">Calendrier</a></li>
+          <li><a href="/dashbord" class="menu-button">Dashboard</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <button class="btn-primary">notification</button>
+      </div>
+      <div class="user-actions">
+        <button class="btn-secondary">user</button>
+      </div>
+    </div>
+  </header>
+  
+  <RouterView/>
 </template>
 
 <style>
+/* style.css */
+header {
+  background-color: var(--default-color);
+  padding: 15px 0;
+  border-bottom: 1px solid var(--main-color);
+  
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+  font-weight: bold;
+  padding-right: 25px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
 
 </style>

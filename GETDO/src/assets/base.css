@@ -1,6 +1,8 @@
 /* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-  --main-color: #DB5461;
+  --main-color: #db5461;
   --pitch-dark: #000000;
   --clear-default: #FFFFFF;
   --deap-gray: #757575;
@@ -42,5 +44,3 @@
     --default-color: var(--dark-default);
   }
 }
-
-
