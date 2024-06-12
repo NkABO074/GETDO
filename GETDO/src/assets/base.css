@@ -33,14 +33,20 @@
 /* semantic color variables for this project */
 :root {
   --background-color: var(--clear-bg-color);
-  --box-bg-color: var(--dark-official-gray);
+  --box-bg-color: var(--clear-official-gray);
   --default-color: var(--clear-default);
+  --default-text-color: var(--pitch-dark);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: var(--dark-bg-color);
-    --box-bg-color: var(--clear-official-gray);
+    --box-bg-color: var(--dark-official-gray);
     --default-color: var(--dark-default);
+    --default-text-color: var(--clear-default);
   }
+}
+
+* {
+  font-family: 'Noto Sans', sans-serif;
 }

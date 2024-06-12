@@ -1,8 +1,5 @@
 @import './base.css';
 
-* {
-  font-family: 'Noto Sans';
-}
 
 html, body {
   margin: 0;
@@ -42,6 +39,7 @@ html, body {
 
 .page-container {
   background-color: var(--background-color);
+  padding-top: 10px;
   height: 100vh;
   width: 100%;
 }
