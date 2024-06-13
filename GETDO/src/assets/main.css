@@ -19,6 +19,7 @@ html, body {
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
 }
 
 /* .fancyButton:hover {
@@ -33,6 +34,24 @@ html, body {
   margin:0 10px 0 10px ;
   color: var(--main-color);
   font-size: 16px;
+  font-weight: bold;
+}
+
+.links {
+  background-color: #6b6b6b;
+  border-radius: 20px;
+  border-style: none;
+  padding: 0 5px 0 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.error {
+  background-color: #9200009d;
+  border-radius: 20px;
+  border-style: none;
+  padding: 2px 5px 2px 5px;
+  font-size: 13px;
   font-weight: bold;
 }
 
