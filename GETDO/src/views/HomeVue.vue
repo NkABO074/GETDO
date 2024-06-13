@@ -1,12 +1,7 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
-<body class="page-container">
-  
-</body>
+  <body class="page-container"></body>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
