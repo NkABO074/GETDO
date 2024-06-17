@@ -9,18 +9,15 @@
         </div>
         <form class="form-container" action="">
           <label for="email_input">Address E-mail</label>
-          <input type="email" name="email" id="email_input" />
+          <input type="email" name="email" id="email_input" class="input-fields"/>
 
           <label for="pswrd_input">Mot de passe</label>
-          <input type="password" name="email" id="pswrd_input" />
+          <input type="password" name="email" id="pswrd_input" class="input-fields"/>
 
-          <label for="pswrd_confirm_input">Confirmer le mot de passe</label>
-          <input type="password" name="email" id="pswrd_confirm_input" />
           <hr>
-          <RouterLink to="/home" class="fancyButton"> S'incrire</RouterLink>
+          <RouterLink to="/home" class="fancyButton"> Se Connecter</RouterLink>
           <hr>
           <RouterLink to="/home" class="fancyButton"> Se connecter avec Google</RouterLink>
-          <p class="TOS_indication">En vous connectant, vous aceptez les <RouterLink class="links"> conditions générale d'utilisation </RouterLink> </p>
         </form>
       </div>
     </div>
@@ -57,8 +54,9 @@ h2 {
   border-radius: 40px;
   justify-content: space-around;
   align-items: center;
-  width: 1024px;
-  height: 450px;
+  width: 80vw;
+  height: 85vh;
+  border: 1px solid var(--border-color);
 }
 
 .form-container {
@@ -76,15 +74,7 @@ h2 {
 .TOS_indication {
   font-size: 13px;
 }
-
-input {
-  background-color: var(--pitch-dark);
-  border: 1px solid var(--deap-gray);
-  padding: 5px;
-  color: var(--clear-default);
-  border-radius: 10px;
-}
-
+                  
 @media (max-width: 767px) {
   h1 {
     font-size: 36px;

@@ -13,11 +13,13 @@
   --clear-official-gray: #EEEEEE;
   --clear-bg-color: #F5F5DC;
   --clear-default: #FFFFFF;
+  --clear-border-color: rgb(199, 199, 199);
 
   /* dark mode colors */
   --dark-official-gray: #252525;
   --dark-bg-color: #46463c;
   --dark-default: #303030;
+  --dark-border-color: rgb(70, 70, 70);
 
   /* visual indicator colors */
   --weak-priority-color: #088000;
@@ -36,6 +38,7 @@
   --box-bg-color: var(--clear-official-gray);
   --default-color: var(--clear-default);
   --default-text-color: var(--pitch-dark);
+  --border-color:var(--clear-border-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,6 +47,7 @@
     --box-bg-color: var(--dark-official-gray);
     --default-color: var(--dark-default);
     --default-text-color: var(--clear-default);
+    --border-color:var(--dark-border-color);
   }
 }
 

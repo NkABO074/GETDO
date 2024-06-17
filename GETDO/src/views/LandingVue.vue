@@ -8,8 +8,12 @@
         <h2>A simple task manager</h2>
       </div>
       <div class="button-container">
-        <RouterLink class="fancyButton" to="/inscription">S'inscrire</RouterLink>
-        <RouterLink class="fancyButton" to="/connection">Se connecter</RouterLink>
+        <RouterLink class="fancyButton" to="/inscription"
+          >S'inscrire</RouterLink
+        >
+        <RouterLink class="fancyButton" to="/connection"
+          >Se connecter</RouterLink
+        >
       </div>
     </div>
   </div>
@@ -49,12 +53,11 @@ h2 {
 /* Smol screen */
 @media (max-width: 767px) {
   h1 {
-    font-size: 8vw; 
+    font-size: 8vw;
   }
-  
+
   h2 {
-    font-size: 4vw; 
+    font-size: 4vw;
   }
 }
-
 </style>

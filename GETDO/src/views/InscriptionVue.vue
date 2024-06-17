@@ -57,8 +57,9 @@ h2 {
   border-radius: 40px;
   justify-content: space-around;
   align-items: center;
-  width: 1024px;
-  height: 450px;
+  width: 80vw;
+  height: 85vh;
+  border: 1px solid var(--border-color);
 }
 
 .form-container {
@@ -78,10 +79,10 @@ h2 {
 }
 
 input {
-  background-color: var(--pitch-dark);
+  background-color: var(--backgound-color);
   border: 1px solid var(--deap-gray);
   padding: 5px;
-  color: var(--clear-default);
+  color: var(--default-text-color);
   border-radius: 10px;
 }
 

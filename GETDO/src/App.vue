@@ -1,23 +1,42 @@
 <script setup>
-import { RouterView ,useRoute} from "vue-router"
+import { RouterView, useRoute } from "vue-router";
 
 const route = useRoute();
-
 </script>
 
 <template>
-
-  <header class="container" v-if="!(route.path === '/' || route.path === '/connection' || route.path === '/inscription')">
+  <header
+    class="container"
+    v-if="
+      !(
+        route.path === '/' ||
+        route.path === '/connection' ||
+        route.path === '/inscription'
+      )
+    "
+  >
     <div class="container">
-      <h1 href="/home" class="logo">
-        GETDO
-      </h1>
+      <h1 href="/home" class="logo">GETDO</h1>
       <nav>
         <ul>
-          <li><a href="/home" class="menu-button">Tâches</a></li>
-          <li><a href="/visionbord" class="menu-button">Vision Board</a></li>
-          <li><a href="/calendar" class="menu-button">Calendrier</a></li>
-          <li><a href="/dashbord" class="menu-button">Dashboard</a></li>
+          <li>
+            <RouterLink to="/home" class="menu-button">Tâches</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/visionbord" class="menu-button"
+              >Vision Board</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink to="/calendar" class="menu-button"
+              >Calendrier</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink to="/dashbord" class="menu-button"
+              >Dashboard</RouterLink
+            >
+          </li>
         </ul>
       </nav>
       <div class="user-actions">
@@ -28,8 +47,8 @@ const route = useRoute();
       </div>
     </div>
   </header>
-  
-  <RouterView/>
+
+  <RouterView />
 </template>
 
 <style>
@@ -38,7 +57,6 @@ header {
   background-color: var(--default-color);
   padding: 15px 0;
   border-bottom: 1px solid var(--main-color);
-  
 }
 
 .container {
@@ -95,5 +113,4 @@ nav a {
   background-color: #6c757d;
   color: #fff;
 }
-
 </style>
