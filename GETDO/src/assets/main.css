@@ -1,7 +1,7 @@
-@import './base.css';
+@import "./base.css";
 
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -14,13 +14,39 @@ html, body {
   border-radius: 20px;
   border-style: none;
   padding: 10px 40px 10px 40px;
-  margin:0 10px 0 10px ;
+  margin: 0 10px 0 10px;
   color: var(--clear-default);
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
 }
+
+/* FancyBtn Responcive */
+@media (min-width: 1024px) {
+  .fancyButton {
+    padding: 10px 40px;
+    font-size: 16px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .fancyButton {
+    padding: 8px 30px;
+    font-size: 14px;
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fancyButton {
+    padding: 6px 20px;
+    font-size: 12px;
+    margin: 0 5px;
+  }
+}
+/*--------------------*/
 
 /* .fancyButton:hover {
   color: ;
@@ -31,18 +57,26 @@ html, body {
   border-radius: 20px;
   border-style: none;
   padding: 10px 40px 10px 40px;
-  margin:0 10px 0 10px ;
+  margin: 0 10px 0 10px;
   color: var(--main-color);
   font-size: 16px;
   font-weight: bold;
 }
-
+@media (max-width: 768px) {
+/* Menu button responcive */
+.menu-button {
+  padding: 10px 20px 10px 20px;
+  margin: 0 2px 0 2px;
+  font-size: 10px;
+}
+/* ---------------------- */
+}
 .links {
   background-color: #6b6b6b;
   border-radius: 20px;
   border-style: none;
   padding: 0 5px 0 5px;
-  color:aliceblue;
+  color: aliceblue;
   font-size: 13px;
   font-weight: bold;
   text-decoration: none;
@@ -56,7 +90,6 @@ html, body {
   font-size: 13px;
   font-weight: bold;
 }
-
 
 .page-container {
   background-color: var(--background-color);

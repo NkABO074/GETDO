@@ -15,8 +15,8 @@ const route = useRoute();
       )
     "
   >
-    <div class="container">
-      <h1 href="/home" class="logo">GETDO</h1>
+    <div class="container dropdown">
+      <h1 class="logo">GETDO</h1>
       <nav>
         <ul>
           <li>
@@ -113,4 +113,52 @@ nav a {
   background-color: #6c757d;
   color: #fff;
 }
+
+/* Responcive */
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+
+  .user-actions {
+    display: flex;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    padding: 0 10px;
+  }
+
+  .logo {
+    display: none;
+  }  
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-right: 15px;
+  }
+
+  .user-actions {
+    display: flex;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+}
+
 </style>
