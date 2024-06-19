@@ -80,4 +80,25 @@
   margin: 2px 0px -10px 0;
   font-size: 14px;
 }
+
+@media only screen and (max-width: 768px) {
+  .task-search {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .base-button {
+    padding: 8px 20px; 
+    margin: 5px 0;
+  }
+
+  .task-description {
+    font-size: 12px;
+  }
+
+  .task-title,
+  .task-duration {
+    margin: 5px; 
+  }
+}
 </style>

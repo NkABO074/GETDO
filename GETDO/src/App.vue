@@ -24,7 +24,7 @@ const route = useRoute();
           </li>
           <li>
             <RouterLink to="/visionbord" class="menu-button"
-              >Vision Board</RouterLink
+              >VisionBoard</RouterLink
             >
           </li>
           <li>
@@ -40,10 +40,10 @@ const route = useRoute();
         </ul>
       </nav>
       <div class="user-actions">
-        <button class="btn-primary">notification</button>
+        <button class="btn-primary menu-button">0</button>
       </div>
-      <div class="user-actions">
-        <button class="btn-secondary">user</button>
+      <div class="user-actions ">
+        <button class="btn-secondary menu-button">user</button>
       </div>
     </div>
   </header>
@@ -97,13 +97,6 @@ nav a {
   align-items: center;
 }
 
-.btn {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 .btn-primary {
   background-color: #007bff;
   color: #fff;
@@ -116,48 +109,21 @@ nav a {
 
 /* Responcive */
 @media (min-width: 1024px) {
-  .container {
-    flex-direction: row;
-  }
-
-  nav ul {
-    display: flex;
-  }
-
-  nav li {
-    margin-right: 20px;
-  }
-
-  .user-actions {
-    display: flex;
-  }
+  
 }
 
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .container {
-    flex-direction: row;
-    padding: 0 10px;
+    flex-wrap: wrap; 
   }
 
   .logo {
-    display: none;
-  }  
-
-  nav ul {
-    display: flex;
+    padding-right: 0; 
   }
 
   nav li {
-    margin-right: 15px;
-  }
-
-  .user-actions {
-    display: flex;
-  }
-
-  .btn {
-    padding: 8px 16px;
+    margin-right: 10px; 
   }
 }
 
