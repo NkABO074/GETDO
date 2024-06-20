@@ -24,8 +24,8 @@ const route = useRoute();
           </li>
           <li>
             <RouterLink to="/visionbord" class="menu-button"
-              >VisionBoard</RouterLink
-            >
+              >VisionBoard
+            </RouterLink>
           </li>
           <li>
             <RouterLink to="/calendar" class="menu-button"
@@ -42,8 +42,11 @@ const route = useRoute();
       <div class="user-actions">
         <button class="btn-primary menu-button">0</button>
       </div>
-      <div class="user-actions ">
-        <button class="btn-secondary menu-button">user</button>
+      <div class="user-actions">
+        <img
+          src="../src/assets/images/default-user-icon.jpeg"
+          class="btn-secondary menu-button"
+        />
       </div>
     </div>
   </header>
@@ -103,28 +106,46 @@ nav a {
 }
 
 .btn-secondary {
-  background-color: #6c757d;
+  background-image: url("../src/assets/images/default-user-icon.jpeg");
+  width: 24px;
+  height: 24px;
   color: #fff;
 }
 
 /* Responcive */
 @media (min-width: 1024px) {
-  
-}
+  .logo {
+    font-size: 24px;
+  }
 
-
-@media only screen and (max-width: 768px) {
   .container {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
   }
 
   .logo {
-    padding-right: 0; 
+    padding-right: 0;
   }
 
   nav li {
-    margin-right: 10px; 
+    margin-right: 10px;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    padding-right: 0;
+  }
+
+  nav li {
+    margin-right: 10px;
+  }
+}
 </style>
