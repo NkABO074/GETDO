@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+import HeaderComponent from "../components/HeaderComponent.vue";
+</script>
+
 <template>
+  <HeaderComponent></HeaderComponent>;
   <body class="page-container">
     <div class="button-block">
       <button class="fancyButton">Ajouter un nouvelle idée</button>
@@ -22,7 +26,6 @@
           <div class="desc">Lorem Ipsum</div>
         </div>
       </div>
-      
     </div>
   </body>
 </template>
