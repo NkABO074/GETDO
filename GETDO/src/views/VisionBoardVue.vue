@@ -1,26 +1,61 @@
 <script setup></script>
 <template>
-  <div class="dropdown">
-  <img src="../assets/images/bg-img.jpg" alt="Cinque Terre" width="100" height="50">
-  <div class="dropdown-content">
-  <img src="../assets/images/bg-img.jpg" alt="Cinque Terre" width="300" height="200">
-  <div class="desc">Lorem Ipsum</div>
-  </div>
-</div>
+  <body class="page-container">
+    <div class="button-block">
+      <button class="fancyButton">Ajouter un nouvelle idée</button>
+    </div>
+    <div class="bord">
+      <div class="dropdown">
+        <img
+          src="../assets/images/bg-img.jpg"
+          alt="Cinque Terre"
+          width="200"
+          height="100"
+        />
+        <div class="dropdown-content">
+          <img
+            src="../assets/images/bg-img.jpg"
+            alt="Cinque Terre"
+            width="320"
+            height="220"
+          />
+          <div class="desc">Lorem Ipsum</div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
 </template>
 
 <style scoped>
+.button-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bord {
+  width: 100vw;
+  height: 100%;
+  margin: 10px;
+}
+
+img {
+  border-radius: 10px;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
 .dropdown-content {
+  border-radius: 20px;
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--box-bg-color);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -29,6 +64,8 @@
 }
 
 .desc {
+  background-color: var(--box-bg-color);
+  color: var(--default-text-color);
   padding: 15px;
   text-align: center;
 }

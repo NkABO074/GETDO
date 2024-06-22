@@ -24,6 +24,8 @@ const router = createRouter({
       name: "inscription",
       component: InscriptionVue,
     },
+
+    // the app paths right below 
     {
       path: "/home",
       name: "home",
@@ -36,7 +38,7 @@ const router = createRouter({
     },
     {
       path:"/calendar",
-      name: "/calendar",
+      name: "calendar",
       component: CalendarVue,
     }
 
