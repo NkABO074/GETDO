@@ -11,12 +11,12 @@ body {
 /* the generic button you will see trought out the app */
 .fancyButton {
   background-color: var(--main-color);
-  border-radius: 20px;
+  border-radius: 14px;
   border-style: none;
-  padding: 10px 40px 10px 40px;
-  margin: 0 10px 0 10px;
+  padding: 7px 37px 7px 37px;
+  margin: 0 7px 0 7px;
   color: var(--clear-default);
-  font-size: 16px;
+  font-size: 14zpx;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
@@ -26,7 +26,7 @@ body {
 @media (min-width: 1024px) {
   .fancyButton {
     padding: 10px 40px;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0 10px;
   }
 }
@@ -46,31 +46,15 @@ body {
     margin: 0 5px;
   }
 }
+
+
 /*--------------------*/
 
 /* .fancyButton:hover {
   color: ;
 } */
 
-.menu-button {
-  background-color: #db546224;
-  border-radius: 20px;
-  border-style: none;
-  padding: 10px 40px 10px 40px;
-  margin: 0 10px 0 10px;
-  color: var(--clear-default);
-  font-size: 16px;
-  font-weight: bold;
-}
-@media (max-width: 768px) {
-/* Menu button responcive */
-.menu-button {
-  padding: 2px 3px 2px 3px;
-  margin: 0 5px 0 5px;
-  font-size: 12px;
-}
-/* ---------------------- */
-}
+
 .links {
   background-color: #6b6b6b;
   border-radius: 20px;
@@ -91,11 +75,8 @@ body {
   font-weight: bold;
 }
 
-.page-container {
+body {
   background-color: var(--background-color);
-  padding-top: 10px;
-  height: 100vh;
-  width: 100%;
 }
 
 .input-fields {
@@ -105,3 +86,4 @@ body {
   color: var(--default-text-color);
   border-radius: 10px;
 }
+

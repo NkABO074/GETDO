@@ -3,7 +3,7 @@ import HeaderComponent from "../components/HeaderComponent.vue";
 </script>
 
 <template>
-  <HeaderComponent></HeaderComponent>;
+  <HeaderComponent/>
   <body class="page-container">
     <div class="button-block">
       <button class="fancyButton">Ajouter un nouvelle idée</button>
@@ -31,6 +31,7 @@ import HeaderComponent from "../components/HeaderComponent.vue";
 </template>
 
 <style scoped>
+
 .button-block {
   display: flex;
   align-items: center;

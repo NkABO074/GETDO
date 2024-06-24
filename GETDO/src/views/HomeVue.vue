@@ -4,14 +4,14 @@ import TaskComponent from "../components/TaskComponent.vue";
 </script>
 
 <template>
-  <HeaderComponent></HeaderComponent>
+  <HeaderComponent/>
   <body class="page-container">
     <div class="task-search">
       <input type="search" class="input-fields" name="search" id="search" />
       <button class="fancyButton">Recherche</button>
       <button class="fancyButton">Crée une nouvelle tâche</button>
     </div>
-    <TaskComponent></TaskComponent>
+    <TaskComponent/>
   </body>
 </template>
 
