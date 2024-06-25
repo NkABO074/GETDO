@@ -1,6 +1,7 @@
 <script setup></script>
 <template>
   <div class="task">
+    <div class="priority-indicator"><p>Light</p></div>
       <h2 class="task-title">Lorem Task</h2>
       <div class="task-description">
         <p class="task-description-text">
@@ -25,6 +26,19 @@
   background-color: #083600;
 }
 
+.priority-indicator {
+  background-color: var(--weak-priority-color);
+  width: 42px;
+  height: 42px;
+  font-size: 11px;
+  text-align:center;
+  border-radius: 32px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
 .task-validation {
   background-color: #6245c9;
 }
@@ -37,7 +51,7 @@
 }
 
 .task {
-  background-color: var(--weak-priority-color);
+  background-color: var(--box-bg-color);
   margin: 1%;
   padding: 1% 1% 1.5% 1%;
   border-radius: 18px;
