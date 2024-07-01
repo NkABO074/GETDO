@@ -9,7 +9,7 @@ import TaskComponent from "../components/TaskComponent.vue";
     <div class="task-search">
       <input type="search" class="input-fields" name="search" id="search" />
       <button class="fancyButton research-button">
-        <font-awesome-icon icon="magnifying-glass" />
+        <font-awesome-icon icon="magnifying-glass"/>
       </button>
       <button class="fancyButton">Crée une nouvelle tâche</button>
     </div>
@@ -18,9 +18,23 @@ import TaskComponent from "../components/TaskComponent.vue";
 </template>
 
 <style scoped>
+.input-fields {
+  background-color: var(--default-color);
+  border: 1px solid var(--deap-gray);
+  padding: 6.5px;
+  color: var(--default-text-color);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
 .research-button {
-  padding: 5px;
-  border-radius: 5px;
+  padding: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   margin-left: 0px;
 }
 
@@ -32,7 +46,8 @@ import TaskComponent from "../components/TaskComponent.vue";
 
 @media only screen and (max-width: 768px) {
   .task-search {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
   }
 

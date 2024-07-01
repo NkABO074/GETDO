@@ -13,8 +13,8 @@ body {
   background-color: var(--main-color);
   border-radius: 14px;
   border-style: none;
-  padding: 7px 37px 7px 37px;
-  margin: 0 7px 0 7px;
+  padding: 7px 20px 7px 20px;
+  margin: 0 3px 0 3px;
   color: var(--clear-default);
   font-size: 14zpx;
   font-weight: bold;
@@ -79,11 +79,5 @@ body {
   background-color: var(--background-color);
 }
 
-.input-fields {
-  background-color: var(--default-color);
-  border: 1px solid var(--deap-gray);
-  padding: 5px;
-  color: var(--default-text-color);
-  border-radius: 10px;
-}
+
 

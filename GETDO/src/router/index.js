@@ -5,6 +5,7 @@ import ConnectionVue from "../views/ConnectionVue.vue";
 import InscriptionVue from "../views/InscriptionVue.vue";
 import VisionBordVue from "../views/VisionBoardVue.vue";
 import CalendarVue from "../views/CalendarVue.vue"
+import DashbordVue from "../views/DashbordVue.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,10 +38,15 @@ const router = createRouter({
       component: VisionBordVue,
     },
     {
-      path:"/calendar",
+      path: "/calendar",
       name: "calendar",
       component: CalendarVue,
-    }
+    },
+    {
+      path: "/dashbord",
+      name: "dashbord",
+      component: DashbordVue,
+    },
 
     // {
     //   path: '/about',
