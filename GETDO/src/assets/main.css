@@ -79,5 +79,10 @@ body {
   background-color: var(--background-color);
 }
 
-
-
+.generic-input-fields {
+  background-color: var(--default-color);
+  border: 1px solid var(--deap-gray);
+  padding: 6.5px;
+  color: var(--default-text-color);
+  border-radius: 7px;
+}

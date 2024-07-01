@@ -1,15 +1,17 @@
 <script setup>
 import HeaderComponent from "../components/HeaderComponent.vue";
 import TaskComponent from "../components/TaskComponent.vue";
+import PopUpFormTaskComponent from "../components/PopUpFormTaskComponent.vue";
 </script>
 
 <template>
   <HeaderComponent />
   <body class="page-container">
+    <PopUpFormTaskComponent/>
     <div class="task-search">
       <input type="search" class="input-fields" name="search" id="search" />
       <button class="fancyButton research-button">
-        <font-awesome-icon icon="magnifying-glass"/>
+        <font-awesome-icon icon="magnifying-glass" />
       </button>
       <button class="fancyButton">Crée une nouvelle tâche</button>
     </div>
