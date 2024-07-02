@@ -92,6 +92,21 @@ show_popup.value = false;
   justify-content: center;
 }
 
+/* popup css */
+.popup-content {
+  font-size: 14px;
+  background-color: var(--box-bg-color);
+  border-radius: 20px;
+  width: 50vw;
+}
+
+.popup-content-form {
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+}
+/* --- */
+
 @media only screen and (max-width: 768px) {
   .task-search {
     display: flex;
