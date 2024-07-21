@@ -12,7 +12,6 @@
   /* clear mode colors */
   --clear-official-gray: #EEEEEE;
   --clear-bg-color: #F5F5DC;
-  --clear-default: #FFFFFF;
   --clear-border-color: rgb(199, 199, 199);
 
   /* dark mode colors */
@@ -56,3 +55,4 @@
   color: var(--default-text-color);
 }
 
+  
