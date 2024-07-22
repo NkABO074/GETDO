@@ -11,9 +11,9 @@
       </div>
       <p class="task-duration">25-05-2024 au 29-05-2024</p>
       <div class="task-buttons">
-        <button class="task-delete base-button">supprimer</button>
-        <button class="task-mod base-button">modifier</button>
-        <button class="task-validation base-button">terminer</button>
+        <button class="task-delete base-button"><font-awesome-icon icon="trash" /> supprimer</button>
+        <button class="task-mod base-button"><font-awesome-icon icon="pen" /> modifier</button>
+        <button class="task-validation base-button"><font-awesome-icon icon="fa-solid fa-check" /> terminer</button>
       </div>
     </div>
 </template>
