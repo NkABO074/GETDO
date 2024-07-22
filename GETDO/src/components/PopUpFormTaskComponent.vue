@@ -1,11 +1,12 @@
 <script setup>
-const show_popup = ref(false);
-show_popup.value = false;
+
+const {show_popup} = defineProps(['show_popup'])
+
 </script>
 
 <template>
   <div class="popup-content" v-if="show_popup">
-      <div class="close_button" @click="show_popup = false" >x</div>
+      <div class="close_button" @click="show_popup = false" ><font-awesome-icon icon="fa-solid fa-xmark" /></div>
       <form class="popup-content-form">
         <label for="task_name">Nom de la tâche</label>
         <input

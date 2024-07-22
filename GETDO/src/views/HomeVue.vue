@@ -4,21 +4,21 @@ import HeaderComponent from "../components/HeaderComponent.vue";
 import TaskComponent from "../components/TaskComponent.vue";
 import PopUpFormTaskComponent from "../components/PopUpFormTaskComponent.vue";
 
-const show_popup = ref(false);
-show_popup.value = false;
+const popup = false;
+
 </script>
 
 <template>
   <HeaderComponent />
   <body class="page-container">
-     <PopUpFormTaskComponent/>
+      <PopUpFormTaskComponent :show_popup="popup"/>
     <!-- <PopUpFormTaskComponent/> -->
     <div class="task-search">
       <input type="search" class="input-fields" name="search" id="search" />
       <button class="fancyButton research-button">
         <font-awesome-icon icon="magnifying-glass" />
       </button>
-      <button class="fancyButton" @click="show_popup = true">
+      <button class="fancyButton" @click="popup = true">
         Crée une nouvelle tâche
       </button>
     </div>
