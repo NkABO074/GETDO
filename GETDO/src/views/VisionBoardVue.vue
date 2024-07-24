@@ -1,13 +1,16 @@
 <script setup>
+import { ref } from "vue";
 import HeaderComponent from "../components/HeaderComponent.vue";
 import VisionComponent from "../components/VisionComponent.vue";
 
+
+const popup_vision = ref(false);
 /**
- * open the popup...
+ * open the popup_vision...
  */
- function openPopup() {
-  popup.value = !popup.value;
-  console.debug(popup.value);
+ function openPopupVision() {
+  popup_vision.value = !popup_vision.value;
+  console.debug(popup_vision.value);
 }
 
 </script>
@@ -15,41 +18,39 @@ import VisionComponent from "../components/VisionComponent.vue";
 <template>
   <HeaderComponent />
   <!-- <PopUpFormTaskComponent/> -->
-  <div class="popup_mask" v-if="popup">
+  <div class="popup_mask" v-if="popup_vision">
       <div class="popup-content">
-        <button class="close_button" @click="openPopup">
+        <button class="close_button" @click="openPopupVision">
           <font-awesome-icon icon="fa-solid fa-xmark" />
         </button>
         <form class="popup-content-form">
-          <label for="task_name">Nom de la tâche</label>
+          <label for="task_name">Nom de la vision</label>
           <input
             class="generic-input-fields task_nomination"
             type="text"
             name=""
             id="task_name"
           />
-          <label for="task_desc">Description de la tâche</label>
+          <label for="task_desc">Description</label>
           <textarea
             name=""
             class="generic-input-fields task_description"
             id="task_desc"
           ></textarea>
           
+          <label for="file">Ajouter une image</label>
+          <input type="file" name="img" id="file">
+
           <hr />
-          <div class="date-content">
-            <label for="date">date d'échéance </label>
-            <input class="generic-input-fields" type="date" name="" id="date" />
-          </div>
-          <hr />
-          <button class="fancyButton" @click="openPopup">Enregistré</button>
+          <button class="fancyButton" @click="openPopupVision">Enregistré</button>
         </form>
       </div>
     </div>
     <!-- <PopUpFormTaskComponent/> -->
-     
+
   <body class="page-container">
     <div class="button-block">
-      <button class="fancyButton" @click="openPopup" >Ajouter un nouvelle idée</button>
+      <button class="fancyButton" @click="openPopupVision" >Ajouter un nouvelle idée</button>
     </div>
     <VisionComponent/>
   </body>
@@ -62,6 +63,7 @@ import VisionComponent from "../components/VisionComponent.vue";
   justify-content: center;
 }
 
+/* popup */
 .task_nomination {
   margin-bottom: 7px
 }
@@ -92,7 +94,7 @@ import VisionComponent from "../components/VisionComponent.vue";
   font-size: 12px;
   background-color: var(--box-bg-color);
   border-radius: 24px;
-  z-index: 1000;
+  z-index: 100000;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -117,6 +119,6 @@ import VisionComponent from "../components/VisionComponent.vue";
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
 }
-
+/* --- */
 
 </style>
