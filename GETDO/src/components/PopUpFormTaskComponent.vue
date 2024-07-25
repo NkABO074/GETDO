@@ -66,7 +66,10 @@ const close = () => {
   height: 100vh;
   position: fixed;
   margin-top: -20px;
+  top: 0;
+  left: 0;
 }
+
 .close_button {
   background-color: rgb(138, 0, 0);
   width: 32px;
@@ -87,6 +90,8 @@ const close = () => {
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 90%;
+  padding: 20%;
 }
 
 .popup-content-form {
@@ -95,6 +100,15 @@ const close = () => {
   padding: 10px;
   width: 512px;
   margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {  
+  .popup-content {
+    font-size: 14px;
+  }
+  .popup-content-form {
+    padding: 15px; 
+  }
 }
 
 </style>
