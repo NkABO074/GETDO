@@ -2,6 +2,7 @@
 import HeaderComponent from "../components/HeaderComponent.vue";
 </script>
 <template>
-  <HeaderComponent></HeaderComponent>
+  <HeaderComponent/>
+    <VDatePicker v-model="date" is-dark="system" title-position="right" expanded/>
 </template>
 <style scoped></style>
