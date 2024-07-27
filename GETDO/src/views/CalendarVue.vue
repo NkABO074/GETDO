@@ -4,7 +4,7 @@ import HeaderComponent from "../components/HeaderComponent.vue";
 
 <template>
   <HeaderComponent />
-
+<!-- -->
   <VCalendar
     is-dark="system"
     title-position="right"
@@ -12,7 +12,7 @@ import HeaderComponent from "../components/HeaderComponent.vue";
     v-model="date"
     expanded
   />
-  
+
 </template>
 
 <style scoped></style>
