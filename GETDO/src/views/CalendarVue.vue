@@ -5,14 +5,19 @@ import HeaderComponent from "../components/HeaderComponent.vue";
 <template>
   <HeaderComponent />
 <!-- -->
-  <VCalendar
+  <div class="calendar-container">
+    <VCalendar
     is-dark="system"
     title-position="right"
-    :color="selectedColor"
     v-model="date"
     expanded
   />
-
+  </div>
+  
 </template>
 
-<style scoped></style>
+<style scoped>
+.calendar-container {
+  margin: 0.5% 5% 0.5% 5%;
+}
+</style>

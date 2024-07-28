@@ -1,77 +1,41 @@
 <script setup></script>
 <template>
   <div class="task">
-    <div class="priority-indicator"><p>Light</p></div>
-      <h2 class="task-title">Lorem Task</h2>
-      <div class="task-description">
-        <p class="task-description-text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint atque
-          blanditiis.
-        </p>
-      </div>
-      <p class="task-duration">25-05-2024 au 29-05-2024</p>
-      <div class="task-buttons">
-        <button class="task-delete base-button"><font-awesome-icon icon="trash" /> supprimer</button>
-        <button class="task-mod base-button"><font-awesome-icon icon="pen" /> modifier</button>
-        <button class="task-validation base-button"><font-awesome-icon icon="fa-solid fa-check" /> terminer</button>
-      </div>
+    <div class="signal">
+      <div class="priority-indicator"></div>
     </div>
+    <!--  -->
+    <div class="content">
+      <h2 class="task-title">Lorem Task</h2>
+      <p class="task-description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint atque
+        blanditiis.
+      </p>
+      <p class="task-duration">25-05-2024 au 29-05-2024</p>
+    </div>
+    <!--  -->
+    <div class="action">
+      <button class="task-delete base-button">
+        <font-awesome-icon icon="trash" />
+      </button>
+      <button class="task-mod base-button">
+        <font-awesome-icon icon="pen" />
+      </button>
+      <button class="task-validation base-button">
+        <font-awesome-icon icon="fa-solid fa-check" />
+      </button>
+    </div>
+  </div>
 </template>
+
 <style scoped>
-.task-delete {
-  background-color: #db0505;
-}
-
-.task-mod {
-  background-color: #083600;
-}
-
-.priority-indicator {
-  background-color: var(--weak-priority-color);
-  width: 42px;
-  height: 42px;
-  font-size: 11px;
-  text-align:center;
-  border-radius: 32px;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-
-.task-validation {
-  background-color: #6245c9;
-}
-
-.task-description {
-  background-color: #00000069;
-  padding: 7px;
-  border-radius: 10px;
-  font-size: 14px;
-}
-
-.task {
-  background-color: var(--box-bg-color);
-  margin: 1%;
-  padding: 1% 1% 1.5% 1%;
-  border-radius: 18px;
-  border: 1px solid var(--border-color);
-}
-
-.task-title {
-  margin: 7px;
-}
-
-.task-duration {
-  margin: 2px 0px -10px 0;
-  font-size: 14px;
-}
-
 .base-button {
   border-radius: 10px;
-  border-style: none;
-  padding: 10px 40px 10px 40px;
-  margin: 0 7px 0 7px;
+  border-width: 1px;
+  border-color: var(--border-color);
+  border-style: solid;
+  padding: 5px 20px 5px 20px;
+  margin: 0 3.5px 0 3.5px;
   color: var(--clear-default);
   font-size: 14px;
   font-weight: bold;
@@ -80,10 +44,66 @@
   margin-top: 1%;
 }
 
+.base-button:hover {
+  border-color: var(--main-color);
+  border-width: 1.5px;
+}
 
-@media only screen and (max-width: 768px) { 
+.task-delete {
+  background-color: #db0505;
+}
+
+.task-mod {
+  background-color: #083600;
+}
+
+.task-validation {
+  background-color: #6245c9;
+}
+
+.priority-indicator {
+  background-color: var(--weak-priority-color);
+  width: 15px;
+  height: 100%;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.task-title {
+  margin: 7px;
+}
+
+.task-description {
+  font-size: 12px;
+}
+
+.task {
+  background-color: var(--box-bg-color);
+  margin: 0.5% 5% 0.5% 5%;
+  border-radius: 18px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.39);
+  justify-content: space-between;
+}
+
+.task-duration {
+  font-size: 14px;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+  justify-content: space-between
+}
+
+.content {
+  padding:5px;
+}
+@media only screen and (max-width: 768px) {
   .base-button {
-    padding: 8px 20px; 
+    padding: 8px 20px;
     margin: 5px 0;
   }
 
@@ -93,7 +113,7 @@
 
   .task-title,
   .task-duration {
-    margin: 5px; 
+    margin: 5px;
   }
 }
 </style>

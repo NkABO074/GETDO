@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+
+</script>
 
 <template>
     <div class="page-container">
@@ -9,15 +11,16 @@
         </div>
         <form class="form-container" action="">
           <label for="email_input">Address E-mail</label>
-          <input type="email" name="email" id="email_input" />
+          <input v-model="email" type="email" name="email" id="email_input" required/>
 
           <label for="pswrd_input">Mot de passe</label>
-          <input type="password" name="email" id="pswrd_input" />
+          <input v-model="password" type="password" name="email" id="pswrd_input" required/>
 
           <label for="pswrd_confirm_input">Confirmer le mot de passe</label>
-          <input type="password" name="email" id="pswrd_confirm_input" />
+          <input type="password" name="email" id="pswrd_confirm_input" v-model="confirm_password" required/>
           <hr>
-          <RouterLink to="/home" class="fancyButton"> S'incrire</RouterLink>
+
+          <RouterLink to="/home" class="fancyButton" > S'incrire</RouterLink>
           <hr>
           <RouterLink to="/home" class="fancyButton"> Se connecter avec Google</RouterLink>
           <p class="TOS_indication">En vous connectant, vous aceptez les <RouterLink class="links"> conditions générale d'utilisation </RouterLink> </p>
