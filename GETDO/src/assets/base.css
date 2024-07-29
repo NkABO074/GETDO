@@ -1,17 +1,17 @@
 /* color palette from <https://github.com/vuejs/theme> */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 :root {
   --main-color: #db5461;
   --pitch-dark: #000000;
-  --clear-default: #FFFFFF;
+  --clear-default: #ffffff;
   --deap-gray: #757575;
-  
+
   --there-is-a-task-here: #770080;
 
   /* clear mode colors */
-  --clear-official-gray: #EEEEEE;
-  --clear-bg-color: #F5F5DC;
+  --clear-official-gray: #eeeeee;
+  --clear-bg-color: #f5f5dc;
   --clear-border-color: rgb(199, 199, 199);
 
   /* dark mode colors */
@@ -22,13 +22,13 @@
 
   /* visual indicator colors */
   --weak-priority-color: #088000;
-  --light-priority-color: #DE9400;
-  --urgent-priority-color: #FF4D00;
-  --hight-priority-color: #FF0000;
-  --delete-task-color: #DB0505;
+  --light-priority-color: #de9400;
+  --urgent-priority-color: #ff4d00;
+  --hight-priority-color: #ff0000;
+  --delete-task-color: #db0505;
   --modification-task-color: #083600;
-  --validation-task-color: #6245C9;
-  --task-terminated-color: #324D8D;
+  --validation-task-color: #6245c9;
+  --task-terminated-color: #324d8d;
 }
 
 /* semantic color variables for this project */
@@ -37,7 +37,7 @@
   --box-bg-color: var(--clear-official-gray);
   --default-color: var(--clear-default);
   --default-text-color: var(--pitch-dark);
-  --border-color:var(--clear-border-color);
+  --border-color: var(--clear-border-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -46,13 +46,11 @@
     --box-bg-color: var(--dark-official-gray);
     --default-color: var(--dark-default);
     --default-text-color: var(--clear-default);
-    --border-color:var(--dark-border-color);
+    --border-color: var(--dark-border-color);
   }
 }
 
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--default-text-color);
 }
-
-  

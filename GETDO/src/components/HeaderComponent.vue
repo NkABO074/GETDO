@@ -9,27 +9,37 @@
           <ul>
             <li>
               <RouterLink to="/home" class="menu-button"
-                ><font-awesome-icon icon="bars-progress" style="color: #DB5461;" /> Tâches</RouterLink>
+                ><font-awesome-icon
+                  icon="bars-progress"
+                  style="color: #db5461"
+                />
+                Tâches</RouterLink
+              >
             </li>
             <li>
               <RouterLink to="/visionbord" class="menu-button"
-                ><font-awesome-icon icon="border-all" style="color: #DB5461" /> VisionBoard
+                ><font-awesome-icon icon="border-all" style="color: #db5461" />
+                VisionBoard
               </RouterLink>
             </li>
             <li>
               <RouterLink to="/calendar" class="menu-button"
-                ><font-awesome-icon icon="calendar" style="color: #DB5461"/> Calendrier</RouterLink
+                ><font-awesome-icon icon="calendar" style="color: #db5461" />
+                Calendrier</RouterLink
               >
             </li>
             <li>
               <RouterLink to="/dashbord" class="menu-button"
-                ><font-awesome-icon icon="chart-line" style="color: #DB5461"/> Dashboard</RouterLink
+                ><font-awesome-icon icon="chart-line" style="color: #db5461" />
+                Dashboard</RouterLink
               >
             </li>
           </ul>
         </nav>
         <div class="user-actions">
-          <button class="btn-primary menu-button"><font-awesome-icon icon="bell" style="color: #DB5461"/>0</button>
+          <button class="btn-primary menu-button">
+            <font-awesome-icon icon="bell" style="color: #db5461" />0
+          </button>
         </div>
         <div class="user-actions">
           <img
@@ -115,7 +125,7 @@ nav a {
 }
 
 .menu-button:active {
-  border: 1.5px solid var(--main-color) ;
+  border: 1.5px solid var(--main-color);
 }
 
 @media (max-width: 768px) {

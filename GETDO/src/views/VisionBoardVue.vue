@@ -4,20 +4,24 @@ import HeaderComponent from "../components/HeaderComponent.vue";
 import VisionComponent from "../components/VisionComponent.vue";
 import PopUpVisionComponent from "../components/PopUpVisionComponent.vue";
 
-const show_popup_vision = ref(false)
-
+const show_popup_vision = ref(false);
 </script>
 
 <template>
   <HeaderComponent />
-  <PopUpVisionComponent :is_open_vision="show_popup_vision" @close="show_popup_vision = false"/>
+  <PopUpVisionComponent
+    :is_open_vision="show_popup_vision"
+    @close="show_popup_vision = false"
+  />
   <body class="page-container">
     <div class="button-block">
       <button class="fancyButton" @click="show_popup_vision = true">
         Ajouter un nouvelle idée
       </button>
     </div>
-    <VisionComponent />
+    <div class="vision-content">
+      <VisionComponent />
+    </div>
   </body>
 </template>
 

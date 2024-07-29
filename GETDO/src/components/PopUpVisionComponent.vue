@@ -1,7 +1,9 @@
 <script setup>
 import { defineProps, defineEmits } from "vue";
 
-const props_vision = defineProps({ is_open_vision: { type: Boolean, default: false } });
+const props_vision = defineProps({
+  is_open_vision: { type: Boolean, default: false },
+});
 const emit_vison = defineEmits(["close"]);
 
 const closeForm = () => {
@@ -45,7 +47,7 @@ const closeForm = () => {
 <style scoped>
 /* popup */
 .task_nomination {
-  margin-bottom: 7px
+  margin-bottom: 7px;
 }
 
 .task_description {
@@ -104,13 +106,12 @@ const closeForm = () => {
 }
 /* --- */
 
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
   .popup-content {
     font-size: 14px;
   }
   .popup-content-form {
-    padding: 15px; 
+    padding: 15px;
   }
 }
-
 </style>

@@ -4,7 +4,7 @@ import LandingVue from "../views/LandingVue.vue";
 import ConnectionVue from "../views/ConnectionVue.vue";
 import InscriptionVue from "../views/InscriptionVue.vue";
 import VisionBordVue from "../views/VisionBoardVue.vue";
-import CalendarVue from "../views/CalendarVue.vue"
+import CalendarVue from "../views/CalendarVue.vue";
 import DashbordVue from "../views/DashbordVue.vue";
 
 const router = createRouter({
@@ -26,7 +26,7 @@ const router = createRouter({
       component: InscriptionVue,
     },
 
-    // the app paths right below 
+    // the app paths right below
     {
       path: "/home",
       name: "home",

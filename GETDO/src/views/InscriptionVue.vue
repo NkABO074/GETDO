@@ -1,32 +1,58 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-    <div class="page-container">
-      <div class="box-container">
-        <div class="getdo-conatianer">
-          <h1>GETDO</h1>
-          <h2>A simple task manager</h2>
-        </div>
-        <form class="form-container" action="">
-          <label for="email_input">Address E-mail</label>
-          <input v-model="email" type="email" name="email" id="email_input" required/>
-
-          <label for="pswrd_input">Mot de passe</label>
-          <input v-model="password" type="password" name="email" id="pswrd_input" required/>
-
-          <label for="pswrd_confirm_input">Confirmer le mot de passe</label>
-          <input type="password" name="email" id="pswrd_confirm_input" v-model="confirm_password" required/>
-          <hr>
-
-          <RouterLink to="/home" class="fancyButton" > S'incrire</RouterLink>
-          <hr>
-          <RouterLink to="/home" class="fancyButton"> Se connecter avec Google</RouterLink>
-          <p class="TOS_indication">En vous connectant, vous aceptez les <RouterLink class="links"> conditions générale d'utilisation </RouterLink> </p>
-        </form>
+  <div class="page-container">
+    <div class="box-container">
+      <div class="getdo-conatianer">
+        <h1>GETDO</h1>
+        <h2>A simple task manager</h2>
       </div>
+      <form class="form-container" action="">
+        <label for="email_input">Address E-mail</label>
+        <input
+          v-model="email"
+          type="email"
+          name="email"
+          id="email_input"
+          required
+          class="generic-input-fields"
+        />
+
+        <label for="pswrd_input">Mot de passe</label>
+        <input
+          v-model="password"
+          type="password"
+          name="email"
+          id="pswrd_input"
+          required
+          class="generic-input-fields"
+        />
+
+        <label for="pswrd_confirm_input">Confirmer le mot de passe</label>
+        <input
+          type="password"
+          name="email"
+          id="pswrd_confirm_input"
+          v-model="confirm_password"
+          required
+          class="generic-input-fields"
+        />
+        <hr />
+
+        <RouterLink to="/home" class="fancyButton"> S'incrire</RouterLink>
+        <hr />
+        <RouterLink to="/home" class="fancyButton">
+          Se connecter avec Google</RouterLink
+        >
+        <p class="TOS_indication">
+          En vous connectant, vous aceptez les
+          <RouterLink class="links">
+            conditions générale d'utilisation
+          </RouterLink>
+        </p>
+      </form>
     </div>
+  </div>
 </template>
 
 <style scoped>
@@ -74,7 +100,7 @@ h2 {
 }
 
 .getdo-conatianer {
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .TOS_indication {

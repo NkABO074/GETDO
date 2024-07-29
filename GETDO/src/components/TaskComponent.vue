@@ -94,12 +94,12 @@
 .action {
   display: flex;
   flex-direction: column;
-  padding:10px;
-  justify-content: space-between
+  padding: 10px;
+  justify-content: space-between;
 }
 
 .content {
-  padding:5px;
+  padding: 5px;
 }
 @media only screen and (max-width: 768px) {
   .base-button {

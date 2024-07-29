@@ -17,10 +17,9 @@ library.add(fas);
 app.component("font-awesome-icon", FontAwesomeIcon);
 
 // V-calendar
-import VCalendar from 'v-calendar';
-import 'v-calendar/style.css';
+import VCalendar from "v-calendar";
+import "v-calendar/style.css";
 
-app.use(VCalendar, {})
-
+app.use(VCalendar, {});
 
 app.mount("#app");

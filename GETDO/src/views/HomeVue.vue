@@ -4,14 +4,13 @@ import HeaderComponent from "../components/HeaderComponent.vue";
 import TaskComponent from "../components/TaskComponent.vue";
 import PopUpFormTaskComponent from "../components/PopUpFormTaskComponent.vue";
 
-const show_popup = ref(false)
-
+const show_popup = ref(false);
 </script>
 
 <template>
   <HeaderComponent />
   <body class="page-container">
-    <PopUpFormTaskComponent :is_open="show_popup" @close="show_popup = false"/>
+    <PopUpFormTaskComponent :is_open="show_popup" @close="show_popup = false" />
     <div class="task-search">
       <input type="search" class="input-fields" name="search" id="search" />
       <button class="fancyButton research-button">
@@ -27,7 +26,7 @@ const show_popup = ref(false)
 
 <style scoped>
 .task_nomination {
-  margin-bottom: 7px
+  margin-bottom: 7px;
 }
 
 .task_description {
@@ -59,7 +58,6 @@ const show_popup = ref(false)
   align-items: center;
   justify-content: center;
 }
-
 
 @media only screen and (max-width: 768px) {
   .task-search {

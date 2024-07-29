@@ -100,13 +100,12 @@ const close = () => {
   margin-bottom: 16px;
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
   .popup-content {
     font-size: 14px;
   }
   .popup-content-form {
-    padding: 15px; 
+    padding: 15px;
   }
 }
-
 </style>
