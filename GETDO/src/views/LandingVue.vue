@@ -42,6 +42,7 @@ h1 {
   margin-top: -10px;
   margin-bottom: -10px;
   color: var(--clear-default);
+  text-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -49,6 +50,7 @@ h2 {
   font-size: 64px;
   font-weight: 100;
   color: var(--clear-default);
+  text-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.5);
 }
 
 /* Smol screen */
