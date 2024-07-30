@@ -1,26 +1,48 @@
 <script setup>
-import { ref } from 'vue'
-import { supabase } from '../lib/supabase'
+import { ref } from "vue";
+import { supabase } from "../lib/supabase";
 
-const loading = ref(false)
-const email = ref('')
+const loading = ref(false);
+const email = ref("");
+const password = ref("");
 
+/**
+ * signup with google
+ */
+const handleGoogleSignIn = async () => {
+  try {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      redirectTo: "http://localhost:5173/home",
+    });
+
+    if (error) throw error;
+  } catch (error) {
+    alert(error.error_description || error.message);
+  }
+};
+
+/**
+ * signup with email & password
+ */
 const handleLogin = async () => {
   try {
-    loading.value = true
-    const { error } = await supabase.auth.signInWithOtp({
+    loading.value = true;
+    const { error } = await supabase.auth.signUp({
       email: email.value,
-    })
-    if (error) throw error
-    alert('Check your email for the login link!')
+      password: password.value,
+    });
+    if (error) throw error;
+    alert("Check your email for the login link!");
   } catch (error) {
     if (error instanceof Error) {
-      alert(error.message)
+      alert(error.message);
     }
   } finally {
-    loading.value = false
+    loading.value = false;
   }
-}
+};
+
 </script>
 
 <template>
@@ -63,11 +85,10 @@ const handleLogin = async () => {
         />
         <hr />
 
-        <RouterLink to="/home" class="fancyButton"> S'incrire</RouterLink>
+        <button class="fancyButton" @click="handleLogin">S'incrire</button>
         <hr />
-        <RouterLink to="/home" class="fancyButton">
-          Se connecter avec Google</RouterLink
-        >
+        <button class="fancyButton" @click="handleGoogleSignIn">Se connecter avec Google</button>
+
         <p class="TOS_indication">
           En vous connectant, vous aceptez les
           <RouterLink class="links">
